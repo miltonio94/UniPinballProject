@@ -1,9 +1,7 @@
-// A program to test piezos
-
 int led = 13;
 int knockSensor = 0;
 int statePin = LOW;
-int threshHold = 500;
+int threshHold = 1;
 int val = 0;
 
 void setup() {
@@ -17,9 +15,10 @@ void loop() {
         val = analogRead(knockSensor);
 
         if(val > threshHold){
-                Serial.println(val); 
+                Serial.println(val);
                 statePin = !statePin;
                 digitalWrite(led, statePin);
+//                analogWrite(knockSensor, 100);
         }
         delay(50);
 }

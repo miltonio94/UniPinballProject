@@ -3,7 +3,6 @@
 Servo flipper;
 
 const int buttonPin = 2;     // the number of the pushbutton pin
-// variables will change:
 int buttonState = 0;         // variable for reading the pushbutton status
 
 void setup() {

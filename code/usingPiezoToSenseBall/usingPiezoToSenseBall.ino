@@ -1,5 +1,9 @@
 // Piezo sensor  as the ball sensor with debouncing
 
+int piezo = 0,
+      led = 13,
+      mill = -1,
+      
 
 void setup() {
   // put your setup code here, to run once:
